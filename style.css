@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: lightgray;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1em;
+}
+.container {
+  width: 552px;
+  height: 552px;
+  margin-inline: auto;
+  background-color: white;
+  border: 20px solid gray;
+  box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.350);
+  display: grid;
+}
+.square {
+  border: 1px solid gray;
+}
