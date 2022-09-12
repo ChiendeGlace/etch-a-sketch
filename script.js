@@ -1,16 +1,15 @@
 const body = document.querySelector('body');
 const container = document.createElement('div');
 const input = document.createElement('input');
-input.type = 'number';
+input.type = 'range';
 input.min = '1';
 input.max = '64';
 container.classList.add('container');
 body.appendChild(input);
 body.appendChild(container);
-input.addEventListener('input', makeGrid); 
+input.addEventListener('change', makeGrid); 
 function makeGrid(e) {
   let n = e.target.value;
-  console.log(n);
   for (let i = 0; i < n * n; i++) {
     let square = document.createElement('div');
     container.appendChild(square);
@@ -20,8 +19,8 @@ function makeGrid(e) {
       square.style.backgroundColor = 'black';
     };
   }
-  container.style.gridTemplateColumns = 'auto';
-  container.style.gridTemplateRows = 'auto';
+  container.style.gridTemplateColumns = `repeat(${n}, 1fr)`;
+  container.style.gridTemplateRows = `repeat(${n}, 1fr)`;
 };
 
 
