@@ -12,6 +12,25 @@ h1 {
   margin: 1em;
 }
 .container {
+  width: 60%;
+  margin-inline: auto;
+  display: flex;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+button {
+  padding: 0.5em;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.range-value {
+  display: flex;
+  align-items: center;
+}
+.wrapper {
   width: 552px;
   height: 552px;
   margin-inline: auto;
