@@ -20,15 +20,12 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 2em;
+  width: 250px;
 }
 button {
   padding: 0.5em;
   font-size: 1rem;
   cursor: pointer;
-}
-.range-value {
-  display: flex;
-  align-items: center;
 }
 .wrapper {
   width: 552px;
@@ -40,5 +37,9 @@ button {
   display: grid;
 }
 .square {
-  border: 1px solid gray;
+  border: 1px solid lightgray;
+}
+#range-value {
+  text-align: center;
+  font-size: 1.25rem;
 }
